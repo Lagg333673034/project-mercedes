@@ -318,6 +318,12 @@ body{
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
+
+    *{
+        font-size: 18px;
+
+    }
+
     .baner0{
         display: block;
         flex-direction: row;
