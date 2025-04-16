@@ -20,6 +20,9 @@ body{
 
 
 @media (min-width: 1px) and (max-width: 599px) {
+    *{
+        font-size: 18px!important;
+    }
     .baner0{
         display: block;
         flex-direction: row;
@@ -318,12 +321,9 @@ body{
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
-
     *{
-        font-size: 18px;
-
+        font-size: 18px!important;
     }
-
     .baner0{
         display: block;
         flex-direction: row;
