@@ -1,0 +1,903 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: white;
+    font-family: Arial; 
+}
+@font-face {
+    font-family: "Prata";
+    src: url("./fonts/Prata-Regular.ttf");
+}
+html, body { 
+    scroll-behavior: smooth!important;
+}
+body{
+    background: #333333;
+}
+
+
+
+
+@media (min-width: 1px) and (max-width: 599px) {
+    .baner0{
+        display: block;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .baner1 {
+        display: table;
+        grid-gap: 5px;
+        grid-template-columns: minmax(320px, 1fr) 1fr;
+        background: #222222;
+        min-width: 320px;
+        max-width: 1920px;
+        min-height: 320px;
+        max-height: 1009px;
+    }
+    .baner1 > div > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .baner1_left{
+        padding-left: 4em; padding-right: 4em; line-height: 1.3;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+    }
+    .baner1_table td{
+        padding: 0.3em 0.1em;
+    }
+    .baner1_table td img{
+        width: 1.5em; height: 1.5em;
+    }
+    .baner1_button{
+        text-decoration: none;
+        cursor: pointer;
+        padding: 1.5em; 
+        background: white; color: black;
+        border-radius: 2px; 
+        font-family: Arial; font-size: 1em; font-weight: bold; 
+        width: 100%; height: 100%;
+    }
+    
+    .baner2 {
+        display: table;
+        grid-gap: 5px;
+        grid-template-columns: 1fr minmax(320px, 1fr) 1fr;
+        grid-template-rows: 50px 50px;
+        background: #222222;
+        min-width: 320px;
+        max-width: 1920px;
+        min-height: 320px;
+        max-height: 723px;
+        margin-top: 0;
+    }
+    .baner2_left{
+        display:none;
+    } 
+    .baner2_right{
+        display:none;
+    }
+    .baner2_center{
+        padding: 0em 3em;
+        line-height: 1.3;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+    }
+    .baner2_center_table {
+        border-collapse: collapse;
+    }
+    .baner2_center_table td{
+        padding: 1em 0.1em;
+        font-size: 1.3em;
+    }
+    .baner2_center_table tr:nth-child(-n+3) td{
+        border-bottom: 0.1em solid #55565A;
+    }
+    .baner2_center_table td img{
+        width: 2em;
+        height: 1.8em;
+    }
+    .baner2_center_button{
+        text-decoration: none;
+        cursor: pointer;
+        padding: 1.5em; 
+        background: white; color: black;
+        border-radius: 2px; 
+        font-family: Arial; font-size: 1em; font-weight: bold; 
+        width: calc(100% - 3em);
+        display:block;
+        text-align: center;
+    }
+    
+    .forma{
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+        width: calc(100% - 3em);
+        min-width: 320px;
+        max-width: 1000px;
+        background: #ffffff;
+        margin: 4em 3em 3em 2em;
+        border: 1px solid #282829;
+        border-radius: 10px;
+        flex-direction: column-reverse;
+    }
+    .forma_left{
+        padding: 1em 1em 2em 4em;
+        max-height: 500px;
+        width: 310px;
+    }
+    .forma_left_table td{
+        padding: 0.5em 0.1em;
+        font-size: 1em;
+        color: black;
+    }
+    .forma_left_input{
+        width: 100%;
+        padding: 0.5em;
+        color: black;
+        font-family: Prada;
+        font-size: 1.3em;
+    }
+    .forma_left_checkbox{
+        position: relative;
+        top: 0.2em;
+        width: 15px;
+        height: 15px;
+    }
+    .forma_left_table tr:nth-child(1) td{
+        font-family: Prata;
+        font-size: 3em;
+        padding: 0.5em 1em 1em 0.1em;
+    }
+    .forma_left_button{
+        cursor: pointer;
+        padding: 1.5em; 
+        background: black; color: white;
+        border-radius: 2px; 
+        font-family: Arial; font-size: 1em;
+        width: calc(100% - 3em);
+        display:block;
+        text-align: center;
+    }
+    .forma_right{
+        width: 100%;
+        height: 400px;
+        max-height: 500px;
+        margin: 0;
+        padding: 0px;
+        border: 0px solid transparent;
+        border-radius: 0px 8px 8px 0px;
+        overflow: hidden;
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+    }
+    .forma_right img {
+        flex-shrink: 0;
+    }
+    .img_girl{
+        position: relative;
+        min-width: none;
+        max-width: 400px;
+        height: auto;
+        min-height: 320px;
+        max-height: 500px;
+        left: -450px;
+        right: 80px;
+    }
+    
+    .footer{
+        width: 100%;
+    }
+    .footer1{
+        width: calc(100% - 2em);
+        padding: 1em;
+        margin: 0;
+        font-style: italic;
+        border-top: 1px solid #D5C9BE;
+        border-bottom: 1px solid #D5C9BE;
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer1 div{
+        color: #D5C9BE;
+        padding: 1em 1em;
+    }
+    .footer2{
+        width: calc(100% - 6em);
+        padding: 2em 3em 1em 3em;
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer2 div img{
+        cursor: pointer;
+        width: 1.5em;
+        padding: 0.3em 0em;
+        margin: 0em 1em;
+        display: inline-grid;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer2_button{
+        text-decoration: none;
+        cursor: pointer;
+        padding: 1.5em; 
+        background: white; color: black;
+        border-radius: 2px; 
+        font-family: Arial; font-size: 1em; font-style: italic; 
+        width: 100%; height: 100%;
+        display: none;
+    }
+    .footer3{
+        width: calc(100% - 6em);
+        padding: 1em 3em 2em 3em;
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: stretch;
+        align-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .menu{
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: flex-start;
+        background: #222222;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    .menu_buttons{
+        display: flex;
+        grid-gap: 5px;
+        padding: 1.5em 1.5em 0 1em;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .menu_buttons div{
+        font-size: 1em;
+        font-style: italic;
+        padding: 0 1em;
+    }
+    .menu_item0{
+        font-family: Prata; 
+        font-size: 1.5em;
+        padding: 1em 3em 1em 3em;
+        text-decoration: none;
+    }
+    .menu_item{
+        text-decoration: none;
+    }
+    .rolodex {
+        width: 100%;
+        max-height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        margin-block: 0;
+        height: 70px;
+    } 
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+    .baner0{
+        display: block;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .baner1 {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: minmax(320px, 1fr) 1fr;
+        background: #222222;
+        min-width: 320px;
+        max-width: 1920px;
+        min-height: 320px;
+        max-height: 1009px;
+    }
+    .baner1 > div > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .baner1_left{
+        padding-left: 4em; padding-right: 4em; line-height: 1.3;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+    }
+    .baner1_table td{
+        padding: 0.3em 0.1em;
+    }
+    .baner1_table td img{
+        width: 1.5em; height: 1.5em;
+    }
+    .baner1_button{
+        text-decoration: none;
+        cursor: pointer;
+        padding: 1.5em; 
+        background: white; color: black;
+        border-radius: 2px; 
+        font-family: Arial; font-size: 1em; font-weight: bold; 
+        width: 100%; height: 100%;
+    }
+    
+    .baner2 {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr minmax(320px, 1fr);
+        grid-template-rows: auto auto;
+        background: #222222;
+        min-width: 320px;
+        max-width: 1920px;
+        min-height: 320px;
+        max-height: 723px;
+        margin-top: 0;
+    }
+    .baner2_left{
+        display: block;
+    }
+    .baner2_right{
+        display: none;
+    }
+    .baner2_center{
+        padding: 0em 3em;
+        line-height: 1.3;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+    }
+    .baner2_center_table {
+        border-collapse: collapse;
+    }
+    .baner2_center_table td{
+        padding: 1em 0.1em;
+        font-size: 1.3em;
+    }
+    .baner2_center_table tr:nth-child(-n+3) td{
+        border-bottom: 0.1em solid #55565A;
+    }
+    .baner2_center_table td img{
+        width: 2em;
+        height: 1.8em;
+    }
+    .baner2_center_button{
+        text-decoration: none;
+        cursor: pointer;
+        padding: 1.5em; 
+        background: white; color: black;
+        border-radius: 2px; 
+        font-family: Arial; font-size: 1em; font-weight: bold; 
+        width: calc(100% - 3em);
+        display:block;
+        text-align: center;
+    }
+    
+    .forma{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+        width: calc(100% - 3em);
+        min-width: 320px;
+        max-width: 1000px;
+        background: #ffffff;
+        margin: 4em 3em 3em 2em;
+        border: 1px solid #282829;
+        border-radius: 10px;
+        flex-direction: column-reverse;
+    }
+    .forma_left{
+        padding: 1em 1em 2em 2em;
+        max-height: 500px;
+        width: 310px;
+    }
+    .forma_left_table td{
+        padding: 0.5em 0.1em;
+        font-size: 1em;
+        color: black;
+    }
+    .forma_left_input{
+        width: 100%;
+        padding: 0.5em;
+        color: black;
+        font-family: Prada;
+        font-size: 1.3em;
+    }
+    .forma_left_checkbox{
+        position: relative;
+        top: 0.2em;
+        width: 15px;
+        height: 15px;
+    }
+    .forma_left_table tr:nth-child(1) td{
+        font-family: Prata;
+        font-size: 3em;
+        padding: 0.5em 1em 1em 0.1em;
+    }
+    .forma_left_button{
+        cursor: pointer;
+        padding: 1.5em; 
+        background: black; color: white;
+        border-radius: 2px; 
+        font-family: Arial; font-size: 1em;
+        width: calc(100% - 3em);
+        display:block;
+        text-align: center;
+    }
+    .forma_right{
+        width: 100%;
+        height: 400px;
+        max-height: 500px;
+        margin: 0;
+        padding: 0px;
+        border: 0px solid transparent;
+        border-radius: 0px 8px 8px 0px;
+        overflow: hidden;
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+    }
+    .forma_right img {
+        flex-shrink: 0;
+    }
+    .img_girl{
+        position: relative;
+        min-width: none;
+        max-width: 400px;
+        height: auto;
+        min-height: 320px;
+        max-height: 500px;
+        left: -450px;
+        right: 80px;
+    }
+    
+    .footer{
+        width: 100%;
+    }
+    .footer1{
+        width: calc(100% - 2em);
+        padding: 1em;
+        margin: 0;
+        font-style: italic;
+        border-top: 1px solid #D5C9BE;
+        border-bottom: 1px solid #D5C9BE;
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer1 div{
+        color: #D5C9BE;
+        padding: 1em 1em;
+    }
+    .footer2{
+        width: calc(100% - 6em);
+        padding: 2em 3em 1em 3em;
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-items: stretch;
+        justify-content: space-between;
+    }
+
+    .footer2 div img{
+        cursor: pointer;
+        width: 1.5em;
+        padding: 0em;
+        margin: 0em 1em;
+        display: inline-grid;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer2_button{
+        text-decoration: none;
+        cursor: pointer;
+        padding: 1.5em; 
+        background: white; color: black;
+        border-radius: 2px; 
+        font-family: Arial; font-size: 1em; font-style: italic; 
+        width: 4em;
+        height: 1em;
+        display: block;
+    }
+    .footer3{
+        width: calc(100% - 6em);
+        padding: 1em 3em 2em 3em;
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: stretch;
+        align-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .menu{
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: flex-start;
+        background: #222222;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    .menu_buttons{
+        display: flex;
+        grid-gap: 5px;
+        padding: 1.5em 1.5em 0 1em;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .menu_buttons div{
+        font-size: 1em;
+        font-style: italic;
+        padding: 0 1em;
+    }
+    .menu_item0{
+        font-family: Prata; 
+        font-size: 1.5em;
+        padding: 1em 3em 1em 3em;
+        text-decoration: none;
+    }
+    .menu_item{
+        text-decoration: none;
+    }
+    .rolodex {
+        width: 100%;
+        max-height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        margin-block: 0;
+        height: 70px;
+    } 
+}
+
+@media screen and (min-width: 1000px) {
+    .baner0{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .baner1 {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: minmax(320px, 1fr) 1fr;
+
+        background: #222222; 
+        min-width: 320px; max-width: 1920px; 
+        min-height: 320px; max-height: 1009px;
+    }
+    .baner1 > div > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .baner1_left{
+        padding-left: 4em; padding-right: 4em; line-height: 1.3;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+    }
+    .baner1_table td{
+        padding: 0.3em 0.1em;
+    }
+    .baner1_table td img{
+        width: 1.5em; height: 1.5em;
+    }
+    .baner1_button{
+        text-decoration: none;
+        cursor: pointer;
+        padding: 1.5em; 
+        background: white; color: black;
+        border-radius: 2px; 
+        font-family: Arial; font-size: 1em; font-weight: bold; 
+        width: 100%; height: 100%;
+    }
+    
+    .baner2 {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr minmax(320px, 1fr) 1fr;
+
+        background: #222222; 
+        min-width: 320px; max-width: 1920px; 
+        min-height: 320px; max-height: 723px;
+
+        margin-top: 0;
+    }
+    .baner2_center{
+        padding: 0em 3em;
+        line-height: 1.3;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+    }
+    .baner2_center_table {
+        border-collapse: collapse;
+    }
+    .baner2_center_table td{
+        padding: 1em 0.1em;
+        font-size: 1.3em;
+    }
+    .baner2_center_table tr:nth-child(-n+3) td{
+        border-bottom: 0.1em solid #55565A;
+    }
+    .baner2_center_table td img{
+        width: 2em;
+        height: 1.8em;
+    }
+    .baner2_center_button{
+        text-decoration: none;
+        cursor: pointer;
+        padding: 1.5em; 
+        background: white; color: black;
+        border-radius: 2px; 
+        font-family: Arial; font-size: 1em; font-weight: bold; 
+        width: calc(100% - 3em);
+        display:block;
+        text-align: center;
+    }
+    
+    .forma{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+        width: 100%;
+        min-width: 320px;
+        max-width: 1000px;
+        background: #ffffff;
+        margin: 4em 3em 3em 2em;
+        border: 1px solid #282829;
+        border-radius: 10px;
+    }
+    .forma_left{
+        padding: 1em 1em 2em 4em;
+        max-height: 500px;
+    }
+    .forma_left_table td{
+        padding: 0.5em 0.1em;
+        font-size: 1em;
+        color: black;
+    }
+    .forma_left_input{
+        width: 100%;
+        padding: 0.5em;
+        color: black;
+        font-family: Prada;
+        font-size: 1.3em;
+    }
+    .forma_left_checkbox{
+        position: relative;
+        top: 0.2em;
+        width: 15px;
+        height: 15px;
+    }
+    .forma_left_table tr:nth-child(1) td{
+        font-family: Prata;
+        font-size: 3em;
+        padding: 0.5em 1em 1em 0.1em;
+    }
+    .forma_left_button{
+        cursor: pointer;
+        padding: 1.5em; 
+        background: black; color: white;
+        border-radius: 2px; 
+        font-family: Arial; font-size: 1em;
+        width: calc(100% - 3em);
+        display:block;
+        text-align: center;
+    }
+    .forma_right{
+        width: 100%;
+        height: 400px;
+        max-height: 500px;
+        margin: 0;
+        padding: 0px;
+        border: 0px solid transparent;
+        border-radius: 0px 8px 8px 0px;
+        overflow: hidden;
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+    }
+    .forma_right img {
+        flex-shrink: 0;
+    }
+    .img_girl{
+        position: relative;
+        min-width: none;
+        max-width: 400px;
+        height: auto;
+        min-height: 320px;
+        max-height: 500px;
+        left: -350px;
+        right: 80px;
+    }
+    
+    .footer{
+        width: 100%;
+    }
+    .footer1{
+        width: calc(100% - 2em);
+        padding: 1em;
+        margin: 0;
+        font-style: italic;
+        border-top: 1px solid #D5C9BE;
+        border-bottom: 1px solid #D5C9BE;
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer1 div{
+        color: #D5C9BE;
+        padding: 1em 1em;
+    }
+    .footer2{
+        width: calc(100% - 6em);
+        padding: 2em 3em 1em 3em;
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer2 div img{
+        cursor: pointer;
+        width: 1.5em;
+        padding: 0em;
+        margin: 0em 1em;
+        display: inline-grid;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer2_button{
+        text-decoration: none;
+        cursor: pointer;
+        padding: 1.5em; 
+        background: white; color: black;
+        border-radius: 2px; 
+        font-family: Arial; font-size: 1em; font-style: italic; 
+        width: 100%; height: 100%;
+    }
+    .footer3{
+        width: calc(100% - 6em);
+        padding: 1em 3em 2em 3em;
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: stretch;
+        align-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .menu{
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: flex-start;
+        background: #222222;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    .menu_buttons{
+        display: flex;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1em 1.5em 0.5em 1em;
+    }
+    .menu_buttons div{
+        font-size: 1em;
+        font-style: italic;
+        padding: 0 1em;
+    }
+    .menu_item0{
+        font-family: Prata; 
+        font-size: 1.5em;
+        padding: 1em 3em 1em 3em;
+        text-decoration: none;
+    }
+    .menu_item{
+        text-decoration: none;
+    }
+    .rolodex {
+        width: 100%;
+        max-height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        margin-block: 0;
+        width: 100%;
+    } 
+}
