@@ -285,7 +285,7 @@ body{
     .menu_buttons{
         display: flex;
         grid-gap: 5px;
-        padding: 1.5em 1.5em 0 1em;
+        padding: 1em 1.5em 1em 1em;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
         flex-wrap: wrap;
@@ -296,16 +296,17 @@ body{
     .menu_buttons div{
         font-size: 1em;
         font-style: italic;
-        padding: 0 1em;
+        padding: 0.2em 0.2em 0.2em 0em;
     }
     .menu_item0{
         font-family: Prata; 
-        font-size: 1.5em;
-        padding: 1em 1em 1em 3em;
+        font-size: 1.1em;
+        padding: 1em 0.5em 1em 1em;
         text-decoration: none;
     }
     .menu_item{
         text-decoration: none;
+        font-size: 0.8em;
     }
     .rolodex {
         width: 100%;
@@ -319,7 +320,7 @@ body{
         top: 0;
         z-index: 1;
         margin-block: 0;
-        height: 70px;
+        height: auto;
     } 
 }
 
