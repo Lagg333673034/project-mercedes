@@ -657,6 +657,7 @@ body{
     }
     .baner1_table td{
         padding: 0.3em 0.1em;
+        font-size: 1.1em;
     }
     .baner1_table td img{
         width: 1.5em; height: 1.5em;
@@ -895,6 +896,7 @@ body{
     }
     .menu_item{
         text-decoration: none;
+        font-size: 1.2em;
     }
     .rolodex {
         width: 100%;
